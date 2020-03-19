@@ -3,11 +3,265 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Blog</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Ubuntu:400,500,700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+
+    <header class="header">
+      <div class="header__wrap">
+        <div class="header__container">
+          <div class="header__text">
+            <h1 class="header__title">
+              Living the simple life
+            </h1>
+            <p class="header__quote">
+              A blog exploring minimalism in life
+            </p>
+          </div>
+          <div class="header__navigation">
+            <nav class="header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item nav__active">
+                  <a href="#" class="nav__link nav__active-link">
+                    home
+                  </a>
+                </li>
+                <li class="nav__item nav__active-about">
+                  <a href="#" class="nav__link">
+                    about me
+                  </a>
+                </li>
+                <li class="nav__item nav__active-recent">
+                  <a href="#" class="nav__link">
+                    recent posts
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="find">
+        <div class="find__wrap">
+          <div class="find__text">
+            <div class="find__wrapper">
+              <img
+                src="images/life.webp"
+                alt=""
+                class="find__image"
+                width="714px"
+                height="308px"
+              >
+            </div>
+            <p class="find__desc">
+              July 23, 2019 | 3 comments
+            </p>
+            <h2 class="find__title">
+              Finding simplicity in life
+            </h2>
+            <p class="find__recital">
+              <span class="find__life">Life can get complicated really quickly,</span>
+              but it doesn't have to be! There are many
+              ways  to simplify your life, <a href="#" class="find__recital-link">a few of which
+              we've explored in the past</a>. This week we're
+              taking a  bit of a approach though, in how
+              you can find simplicity in the life you
+              already living.
+            </p>
+            <a href="#" class="find__link">
+              continue reading
+            </a>
+          </div>
+          <div class="find__about about">
+            <div class="about__wrap">
+              <p class="about__title">
+                about me
+              </p>
+              <img
+                src="images/about-me.webp"
+                alt="my Photo"
+                class="about__img"
+              >
+              <p class="about__text">
+                I find life better, and I'm happier,
+                when things are nice and simple.
+              </p>
+            </div>
+          </div>
+          <div class="find__recent recent">
+            <div class="recent__wrap">
+              <h2 class="recent__title">
+                Recent <br> posts
+              </h2>
+              <img
+                src="images/food.webp"
+                alt="Pelmeni"
+                class="recent__img"
+              >
+              <a href="#" class="recent__link">
+                Keeping cooking simple
+              </a>
+              <img
+                src="images/work.webp"
+                alt="Pelmeni"
+                class="recent__img"
+              >
+              <a href="#" class="recent__link recent--after">
+                Simplicity and <br> work
+              </a>
+              <img
+                src="images/deco.webp"
+                alt="Pelmeni"
+                class="recent__img"
+              >
+              <a href="#" class="recent__link">
+                Simple decoration
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="recital">
+        <div class="recital__wrap">
+          <div class="recital__card">
+            <div class="recital__img">
+              <img
+                src="images/food.webp"
+                alt="Wareniki"
+                class="recital__image"
+              >
+              <p class="recital__date">
+                July 19, 2019 | 3 comments
+              </p>
+            </div>
+            <div class="recital__text">
+              <h2 class="recital__title">
+                Keeping cooking simple
+              </h2>
+              <p class="recital__quote">
+                Food is a very important part of everyone's
+                life. If you want <br> to be healthy, you have to
+                eat healthy. One of the easiest <br> ways to do
+                that is to keep your cooking nice and simple.
+              </p>
+              <a href="#" class="find__link">
+                continue reading
+              </a>
+            </div>
+          </div>
+          <div class="recital__card">
+            <div class="recital__img">
+              <img
+                src="images/work.webp"
+                alt="work place"
+                class="recital__image"
+              >
+              <p class="recital__date">
+                July 12, 2019 | 3 comments
+              </p>
+            </div>
+            <div class="recital__text">
+              <h2 class="recital__title">
+                Simplicity and work
+              </h2>
+              <p class="recital__quote">
+                Work is often a major source of stress.
+                People get <br> frustrated, it ruins their
+                relationship with others and it leads <br>
+                to burnout. By keeping your work life
+                as simple as possible, <br> it will help
+                balance everything out.
+              </p>
+              <a href="#" class="find__link mobile-no-active">
+                continue reading
+              </a>
+            </div>
+          </div>
+          <div class="recital__card">
+            <div class="recital__img">
+              <img
+                src="images/deco.webp"
+                alt="Decoration"
+                class="recital__image recital__image--last-image"
+              >
+              <p class="recital__date">
+                July 3, 2019 | 3 comments
+              </p>
+            </div>
+            <div class="recital__text">
+              <h2 class="recital__title">
+                Simple decorations
+              </h2>
+              <p class="recital__quote">
+                A home isn't a home until you've decorated a
+                little. People <br> either don't decorate, or
+                they go overboard and it doesn't <br> have the
+                impact they were hoping for. Staying simple
+                will <br> help draw the eye where you want it to
+                and make things <br> pop like never before.
+              </p>
+              <a href="#" class="find__link mobile-no-active">
+                continue reading
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="mobile-card">
+      <div class="mobile-card__about">
+        <div class="mobile-card__wrap">
+          <img
+            src="images/about-me.webp"
+            alt="My photo"
+            class="mobile-card__image"
+          >
+          <p class="mobile-card__desc">
+            I find life better, and I'm happier, when things are nice and simple.
+          </p>
+        </div>
+      </div>
+      <div class="mobile-card__recent">
+        <div class="mobile-card__container">
+          <p class="mobile-card__title">
+            Recent posts
+          </p>
+          <img src="images/food.webp" alt="Wareniki" class="mobile-card__img">
+          <a href="#" class="mobile-card__link">
+            Keeping cooking simple
+          </a>
+          <img src="images/work.webp" alt="Work place" class="mobile-card__img mobile-card__img--center">
+          <a href="#" class="mobile-card__link mobile-card__link--center">
+            Simplicity and work
+          </a>
+          <img src="images/deco.webp" alt="Flower" class="mobile-card__img">
+          <a href="#" class="mobile-card__link">
+            Simple decoration
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__wrap">
+        <div class="footer__root">
+          <p class="footer__quote">
+            Living the Simple Life
+          </p>
+          <p class="footer__rights">
+            Copyright 2019
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
