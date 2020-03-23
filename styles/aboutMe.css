@@ -1,0 +1,96 @@
+.nav-about__active:hover .nav-about__link::after {
+  position: absolute;
+  content: "";
+  background: #707070;
+  width: 57px;
+  height: 2px;
+  bottom: -3px;
+  left: 10px;
+  -webkit-animation: anim 0.3s ease;
+          animation: anim 0.3s ease; }
+
+.nav-about__active-recent:hover .nav-about__link::after {
+  position: absolute;
+  content: "";
+  background: #707070;
+  width: 151px;
+  height: 2px;
+  bottom: -3px;
+  left: 10px;
+  -webkit-animation: anim 0.3s ease;
+          animation: anim 0.3s ease; }
+
+.nav-about__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  position: relative; }
+
+.nav-about__item {
+  margin-left: 30px;
+  padding: 10px; }
+
+.nav-about__link {
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #717171;
+  letter-spacing: 3.2px;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative; }
+
+.nav-about__active-link::after {
+  position: absolute;
+  content: "";
+  background: #707070;
+  width: 106px;
+  height: 2px;
+  bottom: -3px;
+  left: 10px; }
+
+.about-me {
+  margin-top: 54px; }
+  .about-me__wrap {
+    width: 1005px;
+    position: relative;
+    margin: 0 auto 96px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .about-me-recent {
+    top: 0;
+    right: 0; }
+  .about-me__desc {
+    width: 714px;
+    margin-top: 56px; }
+  .about-me__img {
+    width: 714px;
+    height: 308px; }
+  .about-me__photo {
+    width: 714px;
+    height: 308px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 55%;
+       object-position: 0 55%; }
+  .about-me__title {
+    font-family: Lora, serif;
+    color: #143774;
+    font-size: 24px;
+    margin-bottom: 20px; }
+  .about-me__quote {
+    color: #707070;
+    font-size: 18px;
+    margin-bottom: 20px; }
+  .about-me__link {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 21px;
+    color: #1792d2;
+    text-decoration: none; }
+  .about-me__highlight {
+    font-weight: bold; }
+
+/*# sourceMappingURL=aboutMe.css.map */
