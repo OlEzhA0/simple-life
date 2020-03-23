@@ -75,6 +75,17 @@
     }
 
   }
+  &__link-comm {
+    text-decoration: none;
+    color: #070707;
+    transition: all 0.3s;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__about-link {
+    text-decoration: none;
+  }
 }
 
 .about {
@@ -90,6 +101,7 @@
     border: 20px solid #ebebeb;
   }
   &__img {
+    transition: all 0.3s;
     width: 150px;
     height: 133px;
     object-fit: cover;
@@ -175,4 +187,8 @@
   to {
     transform: translateY(0);
   }
+}
+
+.find__about:hover .about__img {
+  transform: scale(1.1);
 }

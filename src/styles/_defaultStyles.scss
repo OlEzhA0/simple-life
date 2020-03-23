@@ -5,6 +5,10 @@ body {
   background: #fff;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 .find {
   &__wrapper {
     width: 714px;

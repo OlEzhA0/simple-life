@@ -7,6 +7,8 @@
 @import "recital";
 @import "footer";
 @import "mobileCard";
+@import "aboutMe";
+@import "recent";
 
 @media (min-width: 1005px) {
   .mobile-card {
@@ -21,14 +23,16 @@
   .footer {
     width: 100vw;
   }
-  .nav {
+  .nav,
+  .nav-about,
+  .nav-recent {
     &__list {
       text-align: center;
       flex-direction: column;
     }
     &__item {
       margin-left: 0;
-      margin-bottom: 11px;
+      margin-bottom: 20px;
     }
   }
   .header {
@@ -44,6 +48,9 @@
     &__quote {
       margin-bottom: 40px;
     }
+  }
+  .nav-item {
+    margin-bottom: 20px;
   }
   .find {
     margin-top: 58px;
@@ -108,8 +115,30 @@
   .mobile-no-active {
     display: none;
   }
+  .about-me {
+    &__wrap {
+      width: 498px;
+    }
+    &__img {
+      width: 498px;
+    }
+    &__photo {
+      width: 498px;
+    }
+    &__desc {
+      width: 498px;
+    }
+  }
+  .rec-post {
+    &__wrap {
+      width: 514px;
+    }
+  }
 }
 @media (max-width: 550px) {
+  .mobile-no-active {
+    display: none;
+  }
   html,
   body {
     overflow-x: hidden;
@@ -179,6 +208,7 @@
     }
     &__about {
       position: absolute;
+      display: none;
     }
   }
   .recital {
@@ -207,6 +237,9 @@
       flex-direction: column;
       width: 300px;
       height: 500px;
+      &:first-child {
+        height: 550px;
+      }
     }
   }
   .mobile-card {
@@ -238,6 +271,25 @@
     }
     &__container {
       padding: 23px 0 0 20px;
+    }
+  }
+  .about-me {
+    text-align: center;
+    &__wrap {
+      width: 300px;
+    }
+    &__img,
+    &__photo {
+      width: 300px;
+      height: 250px;
+    }
+    &__desc {
+      width: 300px;
+    }
+  }
+  .rec-post {
+    &__wrap {
+      width: 300px;
     }
   }
 }

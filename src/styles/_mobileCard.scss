@@ -17,6 +17,8 @@
     height: 133px;
     object-fit: cover;
     margin-bottom: 20px;
+    transition: all 0.3s;
+
   }
   &__desc {
     font-size: 14px;
@@ -79,4 +81,11 @@
       }
     }
   }
+  &__about-link {
+    text-decoration: none;
+  }
+}
+
+.mobile-card__about:hover .mobile-card__image {
+  transform: scale(1.1, 1.2);
 }

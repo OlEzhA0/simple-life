@@ -22,20 +22,20 @@
             </p>
           </div>
           <div class="header__navigation">
-            <nav class="header__nav nav">
-              <ul class="nav__list">
-                <li class="nav__item nav__active">
-                  <a href="index.html#" class="nav__link nav__active-link">
+            <nav class="header__nav nav-recent">
+              <ul class="nav-recent__list">
+                <li class="nav-recent__item nav-recent__active">
+                  <a href="index.html#" class="nav-recent__link">
                     home
                   </a>
                 </li>
-                <li class="nav__item nav__active-about">
-                  <a href="aboutMe.html" class="nav__link">
+                <li class="nav-recent__item nav-recent__active-about">
+                  <a href="aboutMe.html" class="nav-recent__link">
                     about me
                   </a>
                 </li>
-                <li class="nav__item nav__active-recent">
-                  <a href="recent.html" class="nav__link">
+                <li class="nav-recent__item nav-recent__active-recent">
+                  <a href="recent.html" class="nav-recent__link nav-recent__active-link">
                     recent posts
                   </a>
                 </li>
@@ -46,97 +46,41 @@
       </div>
     </header>
 
-    <main>
-      <section class="find">
-        <div class="find__wrap">
-          <div class="find__text">
-            <div class="find__wrapper">
+    <section class="rec-post">
+      <div class="rec-post__wrap recital">
+        <div class="recital__wrap rec-post__margin0">
+          <div class="recital__card">
+            <div class="recital__img">
               <img
                 src="images/life.webp"
-                alt=""
-                class="find__image"
-                width="714px"
-                height="308px"
+                alt="Wareniki"
+                class="recital__image"
               >
-            </div>
-            <p class="find__desc">
-              July 23, 2019 |
+              <p class="recital__date">
+                July 19, 2019 |
                 <a href="#" class="find__link-comm">
                   3 comments
                 </a>
-            </p>
-            <h2 class="find__title">
-              Finding simplicity in life
-            </h2>
-            <p class="find__recital">
-              <span class="find__life">Life can get complicated really quickly,</span>
-              but it doesn't have to be! There are many
-              ways  to simplify your life, <a href="#" class="find__recital-link">a few of which
-              we've explored in the past</a>. This week we're
-              taking a  bit of a approach though, in how
-              you can find simplicity in the life you
-              already living.
-            </p>
-            <a href="#" class="find__link">
-              continue reading
-            </a>
-          </div>
-          <a href="aboutMe.html" class="find__about-link">
-            <div class="find__about about">
-              <div class="about__wrap">
-                <p class="about__title">
-                  about me
-                </p>
-                <img
-                  src="images/about-me.webp"
-                  alt="my Photo"
-                  class="about__img"
-                >
-                <p class="about__text">
-                  I find life better, and I'm happier,
-                  when things are nice and simple.
-                </p>
-              </div>
+              </p>
             </div>
-          </a>
-
-          <div class="find__recent recent">
-            <div class="recent__wrap">
-              <h2 class="recent__title">
-                Recent <br> posts
+            <div class="recital__text">
+              <h2 class="recital__title">
+                Finding simplicity in life
               </h2>
-              <img
-                src="images/food.webp"
-                alt="Pelmeni"
-                class="recent__img"
-              >
-              <a href="#" class="recent__link">
-                Keeping cooking simple
-              </a>
-              <img
-                src="images/work.webp"
-                alt="Pelmeni"
-                class="recent__img"
-              >
-              <a href="#" class="recent__link recent--after">
-                Simplicity and <br> work
-              </a>
-              <img
-                src="images/deco.webp"
-                alt="Pelmeni"
-                class="recent__img"
-              >
-              <a href="#" class="recent__link">
-                Simple decoration
+              <p class="recital__quote">
+                Life can get complicated really quickly,
+                but it doesn't have to be! There are many
+                ways to simplify your life, a few of which
+                we've explored in the past. This week we're
+                taking a bit of a approach though, in how
+                you can find simplicity in the life you already
+                living.
+              </p>
+              <a href="#" class="find__link">
+                continue reading
               </a>
             </div>
           </div>
-        </div>
-
-      </section>
-
-      <section class="recital">
-        <div class="recital__wrap">
           <div class="recital__card">
             <div class="recital__img">
               <img
@@ -161,7 +105,7 @@
                 eat healthy. One of the easiest <br> ways to do
                 that is to keep your cooking nice and simple.
               </p>
-              <a href="#" class="find__link">
+              <a href="#" class="find__link mobile-no-active">
                 continue reading
               </a>
             </div>
@@ -229,11 +173,61 @@
             </div>
           </div>
         </div>
-      </section>
-    </main>
+        <a href="aboutMe.html" class="find__about-link">
+          <div class="find__about about">
+            <div class="about__wrap">
+              <p class="about__title">
+                about me
+              </p>
+              <img
+                src="images/about-me.webp"
+                alt="my Photo"
+                class="about__img"
+              >
+              <p class="about__text">
+                I find life better, and I'm happier,
+                when things are nice and simple.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <div class="find__recent recent">
+          <div class="recent__wrap">
+            <h2 class="recent__title">
+              Recent <br> posts
+            </h2>
+            <img
+              src="images/food.webp"
+              alt="Pelmeni"
+              class="recent__img"
+            >
+            <a href="#" class="recent__link">
+              Keeping cooking simple
+            </a>
+            <img
+              src="images/work.webp"
+              alt="Pelmeni"
+              class="recent__img"
+            >
+            <a href="#" class="recent__link recent--after">
+              Simplicity and <br> work
+            </a>
+            <img
+              src="images/deco.webp"
+              alt="Pelmeni"
+              class="recent__img"
+            >
+            <a href="#" class="recent__link">
+              Simple decoration
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="mobile-card">
-      <a href="https://google.com" class="mobile-card__about-link">
+      <a href="aboutMe.html" class="mobile-card__about-link">
         <div class="mobile-card__about">
           <div class="mobile-card__wrap">
             <img

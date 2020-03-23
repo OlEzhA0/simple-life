@@ -1,12 +1,13 @@
 @import "utils";
 
 $lenght: (
-  // "" : 57px,
+  "" : 57px,
   "-about" : 106px,
-  "-recent": 151px);
+  // "-recent": 151px
+  );
 
 @each $name, $size in $lenght {
-  .nav__active#{$name}:hover .nav__link::after {
+  .nav-recent__active#{$name}:hover .nav-recent__link::after {
     position: absolute;
     content: "";
     background: #707070;
@@ -18,37 +19,7 @@ $lenght: (
   }
 }
 
-.header {
-  height: 256px;
-  background-color: #f8f8f8;
-
-  &__wrap {
-    padding: 105px 0 0;
-  }
-  &__container {
-    margin: 0 auto;
-    width: $contentWidth;
-    display: flex;
-    justify-content: space-between;
-  }
-  &__title {
-    color: #143774;
-    font-size: 33px;
-    font-family: Lora, serif;
-    font-weight: 400;
-  }
-  &__quote {
-    color: #1792d2;
-    font-size: 12px;
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-  }
-  &__navigation {
-    align-self: center;
-  }
-}
-
-.nav {
+.nav-recent {
   &__list {
     display: flex;
     list-style-type: none;
@@ -73,18 +44,23 @@ $lenght: (
     position: absolute;
     content: "";
     background: #707070;
-    width: 57px;
+    width: 151px;
     height: 2px;
     bottom: -3px;
     left: 10px;
   }
 }
 
-@keyframes anim {
-  from {
-    transform: translateY(-10px);
+.rec-post {
+  margin-top: 60px;
+
+  &__wrap {
+    width: 1005px;
+    display: flex;
+    position: relative;
+    margin: 0 auto 104px;
   }
-  to {
-    transform: translateY(0);
+  &__margin0 {
+    margin-top: 0;
   }
 }
