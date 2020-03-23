@@ -1,0 +1,100 @@
+@import "utils";
+
+$lenght: (
+  "" : 57px,
+  // "-about" : 106px,
+  "-recent": 151px);
+
+@each $name, $size in $lenght {
+  .nav-about__active#{$name}:hover .nav-about__link::after {
+    position: absolute;
+    content: "";
+    background: #707070;
+    width: #{$size};
+    height: 2px;
+    bottom: -3px;
+    left: 10px;
+    animation: anim 0.3s ease;
+  }
+}
+
+.nav-about {
+  &__list {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+  }
+  &__item {
+    margin-left: 30px;
+    padding: 10px;
+
+  }
+  &__link {
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #717171;
+    letter-spacing: 3.2px;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+  }
+  &__active-link::after {
+    position: absolute;
+    content: "";
+    background: #707070;
+    width: 106px;
+    height: 2px;
+    bottom: -3px;
+    left: 10px;
+  }
+}
+
+.about-me {
+  margin-top: 54px;
+  &__wrap {
+    width: 1005px;
+    position: relative;
+    margin: 0 auto 96px;
+    display: flex;
+  }
+  &-recent {
+    top: 0;
+    right: 0;
+  }
+  &__desc {
+    width: 714px;
+    margin-top: 56px;
+  }
+  &__img {
+    width: 714px;
+    height: 308px;
+  }
+  &__photo {
+    width: 714px;
+    height: 308px;
+    object-fit: cover;
+    object-position: 0 55%;
+  }
+  &__title {
+    font-family: Lora, serif;
+    color: #143774;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  &__quote {
+    color: #707070;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  &__link {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 21px;
+    color: #1792d2;
+    text-decoration: none;
+  }
+  &__highlight {
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,66 @@
+@import "utils";
+
+$lenght: (
+  "" : 57px,
+  "-about" : 106px,
+  // "-recent": 151px
+  );
+
+@each $name, $size in $lenght {
+  .nav-recent__active#{$name}:hover .nav-recent__link::after {
+    position: absolute;
+    content: "";
+    background: #707070;
+    width: #{$size};
+    height: 2px;
+    bottom: -3px;
+    left: 10px;
+    animation: anim 0.3s ease;
+  }
+}
+
+.nav-recent {
+  &__list {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+  }
+  &__item {
+    margin-left: 30px;
+    padding: 10px;
+
+  }
+  &__link {
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #717171;
+    letter-spacing: 3.2px;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+  }
+  &__active-link::after {
+    position: absolute;
+    content: "";
+    background: #707070;
+    width: 151px;
+    height: 2px;
+    bottom: -3px;
+    left: 10px;
+  }
+}
+
+.rec-post {
+  margin-top: 60px;
+
+  &__wrap {
+    width: 1005px;
+    display: flex;
+    position: relative;
+    margin: 0 auto 104px;
+  }
+  &__margin0 {
+    margin-top: 0;
+  }
+}

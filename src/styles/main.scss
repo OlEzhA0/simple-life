@@ -1,7 +1,295 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "defaultStyles";
+@import "header";
+@import "find";
+@import "recital";
+@import "footer";
+@import "mobileCard";
+@import "recent";
+@import "about";
 
-body {
-  background: $c-gray;
+@media (min-width: 1005px) {
+  .mobile-card {
+    display: none;
+  }
+}
+@media (max-width: 1005px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .footer {
+    width: 100vw;
+  }
+  .nav,
+  .nav-about,
+  .nav-recent {
+    &__list {
+      text-align: center;
+      flex-direction: column;
+    }
+    &__item {
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+  }
+  .header {
+    width: 100vw;
+    height: 330px;
+    &__wrap {
+      padding: 47px 0 0;
+    }
+    &__container {
+      width: 317px;
+      flex-direction: column;
+    }
+    &__quote {
+      margin-bottom: 40px;
+    }
+  }
+  .nav-item {
+    margin-bottom: 20px;
+  }
+  .find {
+    margin-top: 58px;
+
+    &__wrapper {
+      width: 518px;
+      height: 308px;
+    }
+    &__image {
+      width: 518px;
+      height: 308px;
+    }
+    &__wrap {
+      width: 518px;
+      display: block;
+    }
+    &__desc {
+      margin: 18px 0 15px;
+    }
+    &__recital {
+      white-space: wrap;
+      width: 518px;
+      &::after {
+        width: 518px;
+      }
+    }
+    &__recent {
+      display: none;
+    }
+    &__about {
+      position: absolute;
+    }
+  }
+  .recital {
+    &__wrap {
+      width: 517px;
+    }
+    &__image {
+      width: 517px;
+      height: 242px;
+      margin: 0 0 11px;
+    }
+    &__date {
+      text-align: end;
+    }
+    &__text {
+      position: relative;
+      top: -10px;
+    }
+    &__card {
+      flex-direction: column;
+      width: 518px;
+      height: 456px;
+      margin-bottom: 54px;
+    }
+  }
+  .about {
+    &__wrap {
+      display: none;
+    }
+  }
+  .mobile-no-active {
+    display: none;
+  }
+  .about-me {
+    &__wrap {
+      width: 498px;
+    }
+    &__img {
+      width: 498px;
+    }
+    &__photo {
+      width: 498px;
+    }
+    &__desc {
+      width: 498px;
+    }
+  }
+  .rec-post {
+    &__wrap {
+      width: 514px;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .mobile-no-active {
+    display: none;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .footer {
+    width: 100vw;
+  }
+  .nav {
+    &__list {
+      text-align: center;
+      flex-direction: column;
+    }
+    &__item {
+      margin-left: 0;
+      margin-bottom: 11px;
+    }
+  }
+  .header {
+    width: 100vw;
+    height: 330px;
+    &__wrap {
+      padding: 47px 0 0;
+    }
+    &__container {
+      width: 300px;
+      flex-direction: column;
+    }
+    &__quote {
+      margin-bottom: 40px;
+      font-size: 11px;
+    }
+    &__title {
+      font-size: 30px;
+    }
+  }
+  .find {
+    text-align: center;
+    margin-top: 45px;
+    &__image {
+      width: 300px;
+      height: 250px;
+      margin: 0 auto;
+    }
+    &__wrapper {
+      width: 300px;
+      height: 250px;
+    }
+    &__text {
+      width: 300px;
+    }
+    &__wrap {
+      width: 300px;
+      display: block;
+    }
+    &__desc {
+      margin: 18px 0 15px;
+    }
+    &__recital {
+      white-space: wrap;
+      width: 300px;
+      &::after {
+        width: 300px;
+      }
+    }
+    &__recent {
+      display: none;
+    }
+    &__about {
+      position: absolute;
+      display: none;
+    }
+  }
+  .recital {
+    text-align: center;
+    &__quote {
+      margin: 25px 0;
+    }
+    &__wrap {
+      width: 300px;
+    }
+    &__image {
+      width: 300px;
+      height: 242px;
+      margin: 0 0 11px;
+    }
+    &__date {
+      text-align: center;
+    }
+    &__text {
+      position: relative;
+      top: 10px;
+      height: 250px;
+      margin-bottom: 20px;
+    }
+    &__card {
+      flex-direction: column;
+      width: 300px;
+      height: 500px;
+      &:first-child {
+        height: 550px;
+      }
+    }
+  }
+  .mobile-card {
+    &__about {
+      width: 300px;
+    }
+    &__image,
+    &__img {
+      width: 220px;
+      height: 100px;
+    }
+    &__recent {
+      width: 300px;
+    }
+    &__link--center {
+      &::after,
+      &::before {
+        width: 220px;
+      }
+      &::before {
+        top: -135px;
+      }
+      &::after {
+        bottom: -21px;
+      }
+    }
+    &__title {
+      margin-bottom: 15px;
+    }
+    &__container {
+      padding: 23px 0 0 20px;
+    }
+  }
+  .about-me {
+    text-align: center;
+    &__wrap {
+      width: 300px;
+    }
+    &__img,
+    &__photo {
+      width: 300px;
+      height: 250px;
+    }
+    &__desc {
+      width: 300px;
+    }
+  }
+  .rec-post {
+    &__wrap {
+      width: 300px;
+    }
+  }
 }
